@@ -1,0 +1,27 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:linear.app)",
+      "mcp__claude_ai_Linear__get_issue",
+      "Bash(./mvnw clean:*)",
+      "mcp__claude_ai_Linear__list_issue_statuses",
+      "mcp__claude_ai_Linear__save_issue",
+      "mcp__claude_ai_Linear__list_issues",
+      "Bash(./mvnw dependency:resolve -q)",
+      "Bash(curl -s \"http://localhost:8080/api/karyawan/search?keyword=messi\")",
+      "Bash(curl -s \"http://localhost:8080/api/karyawan/3370056987450001\")",
+      "Bash(curl -s \"http://localhost:8080/api/karyawan/9999999\")",
+      "Bash(curl -s -X POST \"http://localhost:8080/api/karyawan\" -H \"Content-Type: application/json\" -d '{\"\"nik\"\":9999999999999999,\"\"namaLengkap\"\":\"\"Test User\"\",\"\"jenisKelamin\"\":\"\"Laki-laki\"\",\"\"tanggalLahir\"\":\"\"1990-01-01\"\",\"\"alamat\"\":\"\"Jl Test\"\",\"\"negara\"\":\"\"Indonesia\"\"}')",
+      "Bash(curl -s -X POST \"http://localhost:8080/api/karyawan\" -H \"Content-Type: application/json\" -d '{\"\"nik\"\":3370056987450001,\"\"namaLengkap\"\":\"\"Duplicate\"\",\"\"jenisKelamin\"\":\"\"Laki-laki\"\",\"\"tanggalLahir\"\":\"\"1990-01-01\"\"}')",
+      "Bash(pkill -f \"spring-boot:run\")",
+      "Bash(pkill -f \"datapribadi\")",
+      "Bash(netstat -ano)",
+      "Bash(cmd.exe /c \"taskkill /PID 8108 /F\")",
+      "Bash(cmd.exe /c \"taskkill /F /PID 8108 && echo killed\")",
+      "Bash(cmd.exe /c \"taskkill /IM java.exe /F 2>&1 && echo done\")",
+      "Bash(powershell.exe -Command \"Stop-Process -Id 8108 -Force; Write-Host 'killed'\")",
+      "Bash(curl -s \"http://localhost:8080/api/karyawan\")",
+      "Bash(powershell.exe -Command \"Get-Process java | Stop-Process -Force; Write-Host 'killed all java'\")"
+    ]
+  }
+}
